@@ -4,7 +4,8 @@
 ## OS junk
 **/*.DS_Store
 Thumbs.db
-
+tests
+taegest
 ## Editors/IDEs
 /.idea/
 /.vscode/

@@ -8,8 +8,8 @@ description = "Win+V style clipboard history for Linux (multi-DE)"
 repository = "https://github.com/0nsec/clipboard"
 
 [features]
-default = ["ui"]
-ui = ["gtk4"]
+default = []
+ui = ["gtk4", "glib"]
 
 [dependencies]
 anyhow = "1"
@@ -26,10 +26,11 @@ directories = "5"
 rusqlite = { version = "0.31", features = ["bundled", "chrono"] }
 
 # Optional UI
-gtk4 = { version = "0.9", package = "gtk4", optional = true, features = ["v4_10"] }
-glib = { version = "0.19", features = ["v2_74"] }
+gtk4 = { version = "0.9", package = "gtk4", optional = true }
+glib = { version = "0.19", optional = true, features = ["v2_74"] }
 
 [dev-dependencies]
 tempfile = "3"
 assert_cmd = "2"
 serde_json = "1"
+predicates = "3"
