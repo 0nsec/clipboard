@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Clipboard
+Comment=Win+V style clipboard history
+Exec=clipboard --toggle
+Icon=org.clipboard.Clipboard
+Terminal=false
+Categories=Utility;
+StartupWMClass=clipboard
