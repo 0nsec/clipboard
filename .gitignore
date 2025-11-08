@@ -1,37 +1,62 @@
-target/
-**/*.swp
+## Rust build artifacts
+/target/
+
+## OS junk
 **/*.DS_Store
+Thumbs.db
+
+## Editors/IDEs
 /.idea/
 /.vscode/
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
+*.swp
+*.swo
+*~
+.history
+docs/
+target/
+## Binaries and objects
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
-docs
-# Test binary, built with `go test -c`
-*.test
+*.a
+*.lib
+*.o
+*.obj
 
-# Code coverage profiles and other test artifacts
-*.out
-coverage.*
-*.coverprofile
-profile.cov
+## Logs
+*.log
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+## Coverage & test artifacts
+coverage/
+htmlcov/
+.coverage
+.coverage.*
+lcov.info
 
-# Go workspace file
-go.work
-go.work.sum
+## Packaging outputs
+*.deb
+*.rpm
+*.AppImage
+*.snap
+*.flatpak
+*.pkg
+*.tar
+*.tar.gz
+*.zip
 
-# env file
+## Environment files
 .env
+.env.*
+!.env.example
 
-# Editor/IDE
-# .idea/
-# .vscode/
+## Databases (local/testing)
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+## Caches
+.cache/
